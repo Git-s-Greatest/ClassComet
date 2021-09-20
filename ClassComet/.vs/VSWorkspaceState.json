@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\mern",
+    "\\mern\\client",
+    "\\mern\\client\\public",
+    "\\mern\\client\\src",
+    "\\mern\\client\\src\\components",
+    "\\mern\\server",
+    "\\mern\\server\\db",
+    "\\mern\\server\\routes"
+  ],
+  "SelectedNode": "\\mern\\client\\src\\components\\edit.js",
+  "PreviewInSolutionExplorer": false
+}
