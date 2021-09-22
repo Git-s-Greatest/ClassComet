@@ -21,7 +21,7 @@ app.get('/hi', (req, res) => {
 });
 
 app.get('/testReturn', (req, res) => {
-  res.send('This is a test')
+  res.send('This is a test!')
 });
 
 app.get('/:getRecord', (req, res) => {
