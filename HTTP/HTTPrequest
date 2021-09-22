@@ -1,0 +1,36 @@
+const express = require('express');
+
+const app = express();
+
+//this is our db object
+var database = [
+  "ID: 1, Nathan Goshay, Fullstack",
+  "ID: 2, Cody Hanes, Fullstack",
+  "ID: 3, Michelle Gamba, Fullstack"
+]
+app.get('/', (req, res) => {
+  res.send('Hello Express app!')
+});
+
+app.listen(3000, () => {
+  console.log('server started');
+});
+
+app.get('/hi', (req, res) => {
+  res.send('hi :)')
+});
+
+app.get('/testReturn', (req, res) => {
+  res.send('This is a test')
+});
+
+app.get('/:getRecord', (req, res) => {
+  var index = parseInt(req.params.getRecord) - 1;
+  res.send(database[index]);
+});
+
+app.get('/name/:name', function(req, res) {
+  res.send('<html><body><h1>Welcome '
+    + req.params.name + '</h1></body></html>');
+});
+
