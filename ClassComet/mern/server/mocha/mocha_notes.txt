@@ -1,0 +1,26 @@
+Mocha Notes
+
+Assertion: is a test. If test returns false, a message is printed. Otherwise, nothing happens. 
+
+Unit Test: tests a single function
+
+Integration Test: a test across multiple units
+
+Suite: 
+describe(title, callback)
+
+example
+
+dsecribe('requestTime middleware', function() {
+	it('should add a teimedstamp 'request time' prop to 'req'' (this is a description of that SHOULD happen), function() {
+		const req = {};	
+		requestTime(req);	//adds timestamp to req
+
+		//tests that there is actually a timestamp added to req
+		asser.ok(req.requestTime > 0);
+	});
+});
+
+supertest
+
+npm install supertest
