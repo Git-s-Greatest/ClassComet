@@ -6,7 +6,8 @@ const app = express();
 var database = [
   "ID: 1, Nathan Goshay, Fullstack",
   "ID: 2, Cody Hanes, Fullstack",
-  "ID: 3, Michelle Gamba, Fullstack"
+  "ID: 3, Michelle Gamba, Fullstack",
+  "ID: 4, Joshua Cervantes, Backend"
 ]
 app.get('/', (req, res) => {
   res.send('Hello Express app!')
