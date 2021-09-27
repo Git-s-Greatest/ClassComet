@@ -1,6 +1,16 @@
 /* This is an example to ensure the link of the CSS */
 .siteTitle {
-	color: blue;
+	color: black;
+	position: relative;
+	left: 100px;
+	top: 220px;
+}
+
+p{
+	color: black;
+	position: relative;
+	left: 100px;
+	top: 280px;
 }
 
 .signup-button{
@@ -22,4 +32,25 @@
 	width: 80px;
 	border-radius: 10%;
   }
+
+  .learn-more-button{
+	position:absolute;
+	background-color: #BBBBBB;
+	top: 310px;
+	right: 120px;
+	height: 40px;
+	width: 140px;
+	border-radius: 10%;
+  }
+
+  .bottom-nav {
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	height:75px;
+	width:100%;
+	background-color:#BBBBBB;
+ }
+
+ 
  
