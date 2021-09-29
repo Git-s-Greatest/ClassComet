@@ -16,6 +16,9 @@ function Login() {
     if (user) history.replace("/dashboard");
   }, [user, loading]);
   return (
+      <>
+    <div className="navbar"></div>
+    <div className="comet-title">Class Comet</div>
     <div className="login">
       <div className="login__container">
         <input
@@ -49,6 +52,9 @@ function Login() {
         </div>
       </div>
     </div>
+    <div class="bottom-nav">
+	</div>
+    </>
   );
 }
 export default Login;

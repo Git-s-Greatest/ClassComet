@@ -1,3 +1,16 @@
+.navbar{
+    height: 75px;
+    background-color: #BBBBBB;
+}
+
+.comet-title{
+    color: black;
+	position: relative;
+	left: 510px;
+	top: 180px;
+    font-size: 30px;
+}
+
 .login {
     height: 100vh;
     width: 100vw;
@@ -9,21 +22,24 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #dcdcdc;
+    background-color: white;
     padding: 30px;
   }
   .login__textBox {
+    width: 300px;
     padding: 10px;
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    border-radius: 15%;
   }
   .login__btn {
     padding: 10px;
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    border-radius: 15%;
     border: none;
     color: white;
-    background-color: black;
+    background-color: #BBBBBB;
   }
   .login__google {
     background-color: #4285f4;
@@ -31,3 +47,11 @@
   .login div {
     margin-top: 7px;
   }
+
+  .bottom-nav{
+    height: 75px;
+    background-color: #BBBBBB;
+  }
+
+
+
