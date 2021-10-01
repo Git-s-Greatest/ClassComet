@@ -3,7 +3,15 @@ import { initializeApp } from "firebase/app";
 import firebase from "firebase";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-
+const firebaseConfig = {
+    apiKey: "AIzaSyDNN7NyOm9M5O6fhoYH_8Weqky5usESRAY",
+    authDomain: "classcomet-cc9a3.firebaseapp.com",
+    projectId: "classcomet-cc9a3",
+    storageBucket: "classcomet-cc9a3.appspot.com",
+    messagingSenderId: "1001391316733",
+    appId: "1:1001391316733:web:095b445b51f8650403e894",
+    measurementId: "G-HTSN1V72HL"
+  };
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 

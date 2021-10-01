@@ -6,18 +6,94 @@
 .comet-title{
     color: black;
 	position: relative;
-	left: 510px;
+	left: 550px;
+	top: 18px;
+    font-size: 30px;
+}
+
+.register-title{
+    color: black;
+	position: relative;
+	left: 590px;
 	top: 180px;
     font-size: 30px;
 }
 
+.login-title{
+    color: black;
+	position: relative;
+	left: 590px;
+	top: 180px;
+    font-size: 30px;
+}
+
+.siteTitle{
+    color: black;
+	position: relative;
+	left: 300px;
+	top: 230px;
+    font-size: 30px;
+}
+
+p{
+	color: black;
+	position: relative;
+	left: 300px;
+	top: 280px;
+}
+
+.learn-more-button{
+    position: relative;
+	left: 300px;
+	top: 350px;
+}
+
+.container{
+    height: 85vh;
+    width: 100vw;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-button{
+	position:absolute;
+	background-color: white;
+	top: 15px;
+	right:110px;
+	height: 40px;
+	width: 80px;
+	border-radius: 10%;
+  }
+
+  .login-button{
+	position:absolute;
+	background-color: #BBBBBB;
+	top: 15px;
+	right:20px;
+	height: 40px;
+	width: 80px;
+	border-radius: 10%;
+  }
+
+  
+
 .login {
-    height: 100vh;
+    height: 85vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  .namebox{
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 15%;
+  }
+
   .login__container {
     display: flex;
     flex-direction: column;
@@ -25,6 +101,7 @@
     background-color: white;
     padding: 30px;
   }
+
   .login__textBox {
     width: 300px;
     padding: 10px;
@@ -40,6 +117,15 @@
     border: none;
     color: white;
     background-color: #BBBBBB;
+  }
+  .register_btn{
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 15%;
+    border: none;
+    color: white;
+    background-color: #4285f4;
   }
   .login__google {
     background-color: #4285f4;

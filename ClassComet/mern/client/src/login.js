@@ -1,5 +1,5 @@
 import { Link, useHistory } from "react-router-dom";
-import { auth, signInWithEmailAndPassword, signInWithGoogle } from "./firebase";
+import { auth, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithGoogle } from "./firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import React, { useEffect, useState } from "react";
 import "./login.css";
@@ -13,12 +13,12 @@ function Login() {
       // maybe trigger a loading screen
       return;
     }
-    if (user) history.replace("/dashboard");
+
   }, [user, loading]);
   return (
       <>
     <div className="navbar"></div>
-    <div className="comet-title">Class Comet</div>
+    <div className="login-title">Login</div>
     <div className="login">
       <div className="login__container">
         <input
@@ -44,15 +44,13 @@ function Login() {
         <button className="login__btn login__google" onClick={signInWithGoogle}>
           Login with Google
         </button>
-        <div>
-          <Link to="/reset">Forgot Password</Link>
-        </div>
+        
         <div>
           Don't have an account? <Link to="/register">Register</Link> now.
         </div>
       </div>
     </div>
-    <div class="bottom-nav">
+    <div className="bottom-nav">
 	</div>
     </>
   );
