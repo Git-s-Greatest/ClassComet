@@ -19,9 +19,9 @@ function Register() {
     return (
         <>
       <div className="navbar"></div>
-      <div className="register-title">Sign Up</div>
       <div className="login">
         <div className="login__container">
+        <div className="register-title">Sign Up</div>
             <input
                 type="text"
                 className="namebox"

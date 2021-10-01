@@ -18,9 +18,9 @@ function Login() {
   return (
       <>
     <div className="navbar"></div>
-    <div className="login-title">Login</div>
     <div className="login">
       <div className="login__container">
+      <h1 class="login-title">Login</h1>
         <input
           type="text"
           className="login__textBox"
