@@ -1,6 +1,6 @@
 .navbar{
     height: 75px;
-    background-color: #BBBBBB;
+    background-color: #4AD3AE;
 }
 
 .comet-title{
@@ -41,9 +41,14 @@ p{
 }
 
 .learn-more-button{
-    position: relative;
-	left: 300px;
-	top: 350px;
+  position:absolute;
+	background-color: #4AD3AE;
+	top: 330px;
+	right: 220px;
+	height: 40px;
+	width: 140px;
+	border-radius: 8%;
+
 }
 
 .container{
@@ -55,29 +60,35 @@ p{
 }
 
 .signup-button{
+  color: white;
 	position:absolute;
+	background-color: WHITE;
+	top: 15px;
+	right:20px;
+	height: 40px;
+	width: 80px;
+	border-radius: 20%;
+	border-color: #3C3760;
+
+
+
+  }
+
+  .login-button{
+    position:absolute;
 	background-color: white;
 	top: 15px;
 	right:110px;
 	height: 40px;
 	width: 80px;
 	border-radius: 10%;
-  }
-
-  .login-button{
-	position:absolute;
-	background-color: #BBBBBB;
-	top: 15px;
-	right:20px;
-	height: 40px;
-	width: 80px;
-	border-radius: 10%;
+  border-color: #3C3760;
   }
 
   
 
 .login {
-    height: 85vh;
+    height: 60vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -114,7 +125,7 @@ p{
     border-radius: 15%;
     border: none;
     color: white;
-    background-color: #BBBBBB;
+    background-color: #4AD3AE;
   }
   .register_btn{
     padding: 10px;
@@ -133,9 +144,27 @@ p{
   }
 
   .bottom-nav{
-    height: 75px;
-    background-color: #BBBBBB;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:70px;
+    width:100%;
+    background-color:#3C3760;
+  
   }
 
+  .move-image{
+    position: relative;
+    left:-200px;
+    }
+    .welcome-message{
+      color: black;
+      font-size: 22px;
+      font-family: 'Montserrat';
+      position: relative;
+      top: -150px;
+      left: -85px;
+    }
+    
 
 

@@ -3,7 +3,7 @@ import { auth, registerWithEmailAndPassword, sendPasswordResetEmail, signInWithE
 import { useAuthState } from "react-firebase-hooks/auth";
 import React, { useEffect, useState } from "react";
 import "./login.css";
-
+import cometname from "./components/class_comet_name_logo.png";
 function Register() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -19,6 +19,7 @@ function Register() {
     return (
         <>
       <div className="navbar"></div>
+      <div><img src={cometname}  alt="Class Comet" /></div>
       <div className="login">
         <div className="login__container">
         <div className="register-title">Sign Up</div>

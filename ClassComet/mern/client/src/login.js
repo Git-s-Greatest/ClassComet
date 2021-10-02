@@ -3,6 +3,7 @@ import { auth, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithGoo
 import { useAuthState } from "react-firebase-hooks/auth";
 import React, { useEffect, useState } from "react";
 import "./login.css";
+import cometname from "./components/class_comet_name_logo.png";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -18,6 +19,7 @@ function Login() {
   return (
       <>
     <div className="navbar"></div>
+    <div><img src={cometname}  alt="Class Comet" /></div>
     <div className="login">
       <div className="login__container">
       <h1 class="login-title">Login</h1>
