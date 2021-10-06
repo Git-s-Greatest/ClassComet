@@ -1,14 +1,15 @@
 import { Link, useHistory } from "react-router-dom";
-import { auth, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithGoogle } from "./firebase";
+import { auth, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithGoogle, userAuthenticated} from "./firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import React, { useEffect, useState } from "react";
 import "./login.css";
 import cometname from "./components/class_comet_name_logo.png";
 function Login() {
+    let history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [user, loading, error] = useAuthState(auth);
-  const history = useHistory();
+
   useEffect(() => {
     if (loading) {
       // maybe trigger a loading screen
@@ -16,6 +17,7 @@ function Login() {
     }
 
   }, [user, loading]);
+  
   return (
       <>
     <div className="navbar"></div>
@@ -39,7 +41,8 @@ function Login() {
         />
         <button
           className="login__btn"
-          onClick={() => signInWithEmailAndPassword(email, password)}
+          onClick={() => {signInWithEmailAndPassword(email, password); if(userAuthenticated(email)){history.push('/makequiz')}}}
+    
         >
           Login
         </button>

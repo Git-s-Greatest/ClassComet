@@ -1,6 +1,10 @@
 import { initializeApp } from "firebase/app";
 //import { getAnalytics } from "firebase/analytics";
 import firebase from "firebase";
+import { render } from "react-dom";
+import { Route } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import "./login.css";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 const firebaseConfig = {
@@ -21,6 +25,8 @@ const app = firebase.initializeApp(firebaseConfig);
 //const analytics = getAnalytics(app);
 const auth = app.auth()
 const db = app.firestore();
+var userAuthenticate = false;
+var userEmail = "?"
 
 const googleProvider = new firebase.auth.GoogleAuthProvider();
 
@@ -49,16 +55,28 @@ const signInWithGoogle = async () => {
 const signInWithEmailAndPassword = async (email, password) => {
     try {
       await auth.signInWithEmailAndPassword(email, password);
+      userAuthenticate = true;
     } catch (err) {
       console.error(err);
       alert(err.message);
     }
   };
 
+function userAuthenticated(email){
+    userEmail = email;
+      return userAuthenticate;
+};
+
+function getID(){
+    return userEmail
+}
+
+
   const registerWithEmailAndPassword = async (name, email, password) => {
     try {
       const res = await auth.createUserWithEmailAndPassword(email, password);
       const user = res.user;
+      
       await db.collection("users").add({
         uid: user.uid,
         name,
@@ -74,7 +92,6 @@ const signInWithEmailAndPassword = async (email, password) => {
   const sendPasswordResetEmail = async (email) => {
     try {
       await auth.sendPasswordResetEmail(email);
-      alert("Password reset link sent!");
     } catch (err) {
       console.error(err);
       alert(err.message);
@@ -92,5 +109,7 @@ const signInWithEmailAndPassword = async (email, password) => {
     signInWithEmailAndPassword,
     registerWithEmailAndPassword,
     sendPasswordResetEmail,
+    getID,
+    userAuthenticated,
     logout,
   };
