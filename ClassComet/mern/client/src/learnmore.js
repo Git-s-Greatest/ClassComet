@@ -1,7 +1,7 @@
 import { Link, useHistory } from "react-router-dom";
 import "./login.css";
 import comet from "./components/class_comet.png";
-function Landing() {
+function LearnMore() {
     return (
         <>
       <body>
@@ -15,9 +15,8 @@ function Landing() {
 
 <div class="container">
     
-    <img src={comet} width="650" height="650" alt="Class Comet" class="move-image" />
-    <p class = "welcome-message">Make learning fun with interactive quizzes throughout lecutres!</p>
-    <button class="learn-more-button" type="button"><Link to="/learnmore">Learn more</Link></button>
+  
+    <p>Thorough Description of Site</p>
 
     
 </div>
@@ -32,4 +31,4 @@ function Landing() {
       </>
     );
   }
-  export default Landing;
+  export default LearnMore;
