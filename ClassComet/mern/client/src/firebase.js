@@ -88,7 +88,6 @@ function getID(){
       alert(err.message);
     }
   };
-
   const sendPasswordResetEmail = async (email) => {
     try {
       await auth.sendPasswordResetEmail(email);
