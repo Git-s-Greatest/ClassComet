@@ -5,6 +5,7 @@ import Login from './login.js';
 import Register from './register.js';
 import Landing from './landing.js';
 import LearnMore from './learnmore.js';
+import Quiz from './makequiz.js';
 //import { Route } from "react-router-dom";
 
 // We import all the components we need in our app
@@ -22,6 +23,7 @@ const App = () => {
       <Route exact path="/login" component={Login} />
       <Route exact path="/register" component={Register} />
       <Route exact path="/learnmore" component={LearnMore} />
+      <Route exact path="/makequiz" component={Quiz} />
     </Switch>
   </Router>
 </div>
