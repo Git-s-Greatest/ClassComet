@@ -4,6 +4,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import React, { useEffect, useState } from "react";
 import "./login.css";
 import cometname from "./components/class_comet_name_logo.png";
+
 function Login() {
     let history = useHistory();
   const [email, setEmail] = useState("");

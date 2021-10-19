@@ -71,6 +71,10 @@ function getID(){
     return userEmail
 }
 
+function validEmail(email){
+    return email
+}
+
 
   const registerWithEmailAndPassword = async (name, email, password) => {
     try {
@@ -110,5 +114,6 @@ function getID(){
     sendPasswordResetEmail,
     getID,
     userAuthenticated,
+    validEmail,
     logout,
   };

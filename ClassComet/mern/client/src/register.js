@@ -1,5 +1,5 @@
 import { Link, useHistory } from "react-router-dom";
-import { auth, registerWithEmailAndPassword, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithGoogle } from "./firebase";
+import { auth, registerWithEmailAndPassword, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithGoogle, userAuthenticated, getID } from "./firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import React, { useEffect, useState } from "react";
 import "./login.css";
@@ -46,7 +46,7 @@ function Register() {
           />
           <button
             className="register_btn"
-            onClick={() => registerWithEmailAndPassword(name, email, password)}
+            onClick={() => {registerWithEmailAndPassword(name, email, password)}}
           >
             Register
           </button>
