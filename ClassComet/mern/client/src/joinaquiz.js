@@ -15,7 +15,14 @@ function JoinaQuiz() {
     
 <div ><img src={cometname} alt="Class Comet"class = "join-quiz-image" /></div>
  
+<div class = "join-box">
+<input className="join__textBox"type="text"placeholder="Quiz Code"/>
+<form>
+  <input className="join__textBox"type="submit" value="Enter Quiz" />
+</form>
 
+
+</div>
     
 </div>
 
