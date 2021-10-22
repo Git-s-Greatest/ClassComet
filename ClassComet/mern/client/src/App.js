@@ -7,6 +7,7 @@ import Landing from './landing.js';
 import LearnMore from './learnmore.js';
 import Quiz from './makequiz.js';
 import JoinaQuiz from "./joinaquiz.js";
+import QuizPage from "./quizpage.js";
 //import { Route } from "react-router-dom";
 
 // We import all the components we need in our app
@@ -26,6 +27,7 @@ const App = () => {
       <Route exact path="/learnmore" component={LearnMore} />
       <Route exact path="/makequiz" component={Quiz} />
       <Route exact path="/joinaquiz" component={JoinaQuiz} />
+      <Route exact path="/quizpage" component={QuizPage} />
     </Switch>
   </Router>
 </div>
