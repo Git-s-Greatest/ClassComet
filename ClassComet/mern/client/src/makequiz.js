@@ -19,7 +19,7 @@ function Quiz() {
     
     <img src={comet} width="650" height="650" alt="Class Comet" class="move-image" />
     <p class = "welcome-message">Make learning fun with interactive quizzes throughout lecutres!</p>
-    <button class="learn-more-button" type="button">Make a Quiz</button>
+    <button class="learn-more-button" type="button"><Link to="/quizpage">Make a Quiz</Link></button>
 
     
 </div>
