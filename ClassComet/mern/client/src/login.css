@@ -278,6 +278,7 @@ p{
   background-color: red;
 }
 
+<<<<<<< HEAD
 .save_textBox{
   width: 90px;
   height: 40px;
@@ -285,3 +286,15 @@ p{
   margin-left: 570px;
   background-color: #4AD3AE;;
 }
+=======
+.join-quiz-button{
+  position:absolute;
+	background-color: #4AD3AE;
+	top: 400px;
+	right: 220px;
+	height: 40px;
+	width: 140px;
+	border-radius: 8%;
+}
+
+>>>>>>> f5960db4dbca708f3841d1d2f98f5b113977f832
