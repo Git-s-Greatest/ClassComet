@@ -192,10 +192,10 @@ p{
   position:absolute;
   top:50%;
   left:50%;
-  width: 250px;
-  height:50px;
-  margin-top:-390px;  
-  margin-left:-630px;
+  width: 120px;
+  height:100px;
+  margin-top:-350px;  
+  margin-left:-930px;
 }
 
 
@@ -206,6 +206,7 @@ p{
   margin-bottom: 10px;
   border-radius: 5%;
   background-color: #4AD3AE;
+ 
 }
 
 .question-box{
@@ -219,15 +220,15 @@ p{
 }
 
 .question{
-  width: 600px;
+  width: 1000px;
   height: 80px;
   padding: 20px;
   font-size: 30px;
   margin-top: 30px;
-  margin-left: 350px;;
+  margin-left: -335px;;
   border-radius: 5%;
-  background-color: #4AD3AE;
-  color: #000;
+  background-color: #003087;
+  color: white;
 }
 
 .answer1{
@@ -235,11 +236,12 @@ p{
   height: 100px;
   padding: 5px;
   float: left;
-  margin-top: 100px;
-  margin-left: 200px;
+  margin-top: 170px;
+  margin-left:200px;
   font-size: 20px;
   margin-bottom: 10px;
-  background-color: blue;
+  background-color: #1E90FF;
+  color: white;
 }
 
 .answer2{
@@ -247,11 +249,12 @@ p{
   height: 100px;
   padding: 5px;
   float: left;
-  margin-top: 100px;
-  margin-left: 200px;
+  margin-top: 60px;
+  margin-left: 170px;
   font-size: 20px;
   margin-bottom: 10px;
-  background-color: yellow;
+  background-color: #FFB612;
+  color: white;
 }
 
 .answer3{
@@ -259,11 +262,12 @@ p{
   height: 100px;
   padding: 5px;
   float: left;
-  margin-top: 100px;
-  margin-left: 200px;
+  margin-top: 300px;
+  margin-left: -770px;
   font-size: 20px;
   margin-bottom: 10px;
-  background-color:green;
+  background-color:#1D4231;
+  color: white;
 }
 
 .answer4{
@@ -271,19 +275,20 @@ p{
   height: 100px;
   padding: 5px;
   float: left;
-  margin-top: 100px;
-  margin-left: 200px;
+  margin-top: 300px;
+  margin-left: -300px;
   font-size: 20px;
   margin-bottom: 10px;
-  background-color: red;
+  background-color: #C60C30;
+  color: white;
 }
 
 .save_textBox{
   width: 90px;
   height: 40px;
-  margin-top: 50px;
-  margin-left: 570px;
-  background-color: #4AD3AE;;
+  margin-top: 450px;
+  margin-left: -430px;
+  background-color: #6CA468;
 }
 
 .join-quiz-button{

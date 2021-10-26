@@ -1,6 +1,6 @@
 import { Link, useHistory } from "react-router-dom";
 import "./login.css";
-import cometname from "./components/class_comet_name_logo.png";
+import comet from "./components/comet_logo.png";
 function QuizPage() {
     return (
         <>
@@ -13,7 +13,7 @@ function QuizPage() {
 
 <div class="container">
     
-<div ><img src={cometname} alt="Class Comet" class="logo-corner"/></div>
+<div ><img src={comet} alt="Class Comet" class="logo-corner"/></div>
  
 <div class="question-box">
         <input className="question"type="text"placeholder="Enter a Question:"/>
