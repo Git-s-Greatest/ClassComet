@@ -19,14 +19,12 @@ function Quiz() {
 <div class="container">
     <img src={comet} width="650" height="650" alt="Class Comet" class="move-image" />
     <p class = "welcome-message">Make learning fun with interactive quizzes throughout lecutres!</p>
-<<<<<<< HEAD
+
     <button class="learn-more-button" type="button"><Link to="/quizpage">Make a Quiz</Link></button>
 
-    
-=======
-    <button class="learn-more-button" type="button">Make a Quiz</button> 
+
     <button class="join-quiz-button" type="button"><Link to="/joinaquiz" >Join a Quiz</Link></button>
->>>>>>> f5960db4dbca708f3841d1d2f98f5b113977f832
+
 </div>
 
 
