@@ -216,7 +216,7 @@ p{
     /*display: flex;*/
   align-items: center;
   justify-content: center;
-  background-color:#EBECF0;
+  background-color:white; 
 }
 
 .question{
@@ -225,7 +225,7 @@ p{
   padding: 20px;
   font-size: 30px;
   margin-top: 30px;
-  margin-left: -335px;;
+  margin-left: -330px;;
   border-radius: 5%;
   background-color: #003087;
   color: white;
@@ -237,7 +237,7 @@ p{
   padding: 5px;
   float: left;
   margin-top: 170px;
-  margin-left:200px;
+  margin-left:260px;
   font-size: 20px;
   margin-bottom: 10px;
   background-color: #1E90FF;
