@@ -8,6 +8,7 @@ import LearnMore from './learnmore.js';
 import Quiz from './makequiz.js';
 import JoinaQuiz from "./joinaquiz.js";
 import QuizPage from "./quizpage.js";
+import TakeQuiz from "./takequiz.js";
 //import { Route } from "react-router-dom";
 
 // We import all the components we need in our app
@@ -15,6 +16,7 @@ import Navbar from "./components/navbar";
 import Edit from "./components/edit";
 import Create from "./components/create";
 import RecordList from "./components/recordList";
+
 
 const App = () => {
   return (
@@ -28,6 +30,7 @@ const App = () => {
       <Route exact path="/makequiz" component={Quiz} />
       <Route exact path="/joinaquiz" component={JoinaQuiz} />
       <Route exact path="/quizpage" component={QuizPage} />
+      <Route exact path="/takequiz" component={TakeQuiz} />
     </Switch>
   </Router>
 </div>
