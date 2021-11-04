@@ -1,42 +1,107 @@
 import { Link, useHistory } from "react-router-dom";
 import "./login.css";
 import comet from "./components/comet_logo.png";
-function QuizPage() {
-    return (
-        <>
-      <body>
+import React, { Component } from "react";
 
-<nav class="navbar navbar-default" styles="background-color: #BBBBBB; height: 75px">
-    <form class="form-inline">
-    </form>
-</nav>
+export default class QuizPage extends Component{
 
-<div class="container">
+    constructor(props){
+        super(props);
+        this.onChangeQuestion = this.onChangeQuestion.bind(this);
+        this.onChangeAnswer1 = this.onChangeAnswer1.bind(this);
+        this.onChangeAnswer2 = this.onChangeAnswer2.bind(this);
+        this.onChangeAnswer3 = this.onChangeAnswer3.bind(this);
+        this.onChangeAnswer4 = this.onChangeAnswer4.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
     
-<div ><img src={comet} alt="Class Comet" class="logo-corner"/></div>
- 
-<div class="question-box">
-        <input className="question"type="text"placeholder="Enter a Question:"/>
-        <input className="answer1"type="text"placeholder="Answer #1:"/>
-        <input className="answer2"type="text"placeholder="Answer #2:"/>
-        <input className="answer3"type="text"placeholder="Answer #3:"/>
-        <input className="answer4"type="text"placeholder="Answer #4:"/> 
-        <form>
-            <input className="save_textBox"type="submit" value="Save" />
-        </form>       
-</div>
-
+        this.state = {
+            question: '',
+            ans1: '',
+            ans2: '',
+            ans3: '',
+            ans4: ''
+        }
+    }
     
-</div>
+
+    onChangeQuestion(e){
+        this.setState({
+            question: e.target.value
+        });
+    }
+
+    onChangeAnswer1(e){
+        this.setState({
+            ans1: e.target.value
+        });
+    }
+
+    onChangeAnswer2(e){
+        this.setState({
+            ans2: e.target.value
+        });
+    }
+
+    onChangeAnswer3(e){
+        this.setState({
+            ans3: e.target.value
+        });
+    }
+
+    onChangeAnswer4(e){
+        this.setState({
+            ans4: e.target.value
+        });
+    }
+
+    onSubmit(e) {
+        e.preventDefault();
+        const data = {
+            question: this.state.question,
+            ans1: this.state.ans1,
+            ans2: this.state.ans2,
+            ans3: this.state.ans3,
+            ans4: this.state.ans4
+        }
+
+        console.log(data);
+        window.location = '/quizpage'
+    }
+
+    render(){
+        return (
+        <body>
+
+        <nav class="navbar navbar-default" styles="background-color: #BBBBBB; height: 75px">
+            <form class="form-inline">
+            </form>
+        </nav>
+
+        <div class="container">
+                
+            <div ><img src={comet} alt="Class Comet" class="logo-corner"/></div>
+            
+            <div class="question-box">
+                    <input type="text" className="question" value={this.state.question} onChange={this.onChangeQuestion} placeholder="Enter a Question:"/>
+                    <input type="text" className="answer1" value={this.state.ans1} onChange={this.onChangeAnswer1} placeholder="Answer 1:"/>
+                    <input type="text" className="answer2" value={this.state.ans2} onChange={this.onChangeAnswer2} placeholder="Answer 2:"/>
+                    <input type="text" className="answer3" value={this.state.ans3} onChange={this.onChangeAnswer3} placeholder="Answer 3:"/>
+                    <input type="text" className="answer4" value={this.state.ans4} onChange={this.onChangeAnswer4} placeholder="Answer 4::"/>
+                    <form onSubmit={this.onSubmit}>
+                        <input type="submit" value="Save" className="save_textbox"/>
+                    </form>       
+            </div>
+
+        
+        </div>
 
 
-<div class="bottom-nav">
-    <p1 styles="font-size: 20px; font-weight: bold; top: 20px; left: 30px">Gits Greatest</p1>
-</div>
+        <div class="bottom-nav">
+            <p1 styles="font-size: 20px; font-weight: bold; top: 20px; left: 30px">Gits Greatest</p1>
+        </div>
 
-</body>
+        </body>
 
-      </>
-    );
-  }
-  export default QuizPage;
+        );
+    }
+}
