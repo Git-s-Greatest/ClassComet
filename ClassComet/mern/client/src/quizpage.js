@@ -1,3 +1,5 @@
+
+import axios from 'axios';
 import { Link, useHistory } from "react-router-dom";
 import "./login.css";
 import comet from "./components/comet_logo.png";
@@ -56,7 +58,7 @@ export default class QuizPage extends Component{
 
     onSubmit(e) {
         e.preventDefault();
-        const data = {
+        const pageInfo = {
             question: this.state.question,
             ans1: this.state.ans1,
             ans2: this.state.ans2,
@@ -64,8 +66,13 @@ export default class QuizPage extends Component{
             ans4: this.state.ans4
         }
 
-        console.log(data);
-        window.location = '/quizpage'
+        console.log(pageInfo);
+
+        axios.post("http://localhost:5000/record/add", pageInfo)
+        .then(res => console.log(res.data))
+        .catch(err => console.log('errorrororo - ' + err.data))
+
+        //window.location = '/quizpage'
     }
 
     render(){
@@ -83,10 +90,10 @@ export default class QuizPage extends Component{
             
             <div class="question-box">
                     <input type="text" className="question" value={this.state.question} onChange={this.onChangeQuestion} placeholder="Enter a Question:"/>
-                    <input type="text" className="answer1" value={this.state.ans1} onChange={this.onChangeAnswer1} placeholder="Answer 1:"/>
-                    <input type="text" className="answer2" value={this.state.ans2} onChange={this.onChangeAnswer2} placeholder="Answer 2:"/>
-                    <input type="text" className="answer3" value={this.state.ans3} onChange={this.onChangeAnswer3} placeholder="Answer 3:"/>
-                    <input type="text" className="answer4" value={this.state.ans4} onChange={this.onChangeAnswer4} placeholder="Answer 4::"/>
+                    <input type="text" className="answer1" value={this.state.ans1} onChange={this.onChangeAnswer1} placeholder="    Right Answer"/>
+                    <input type="text" className="answer2" value={this.state.ans2} onChange={this.onChangeAnswer2} placeholder="    Wrong Answer"/>
+                    <input type="text" className="answer3" value={this.state.ans3} onChange={this.onChangeAnswer3} placeholder="    Wrong Answer"/>
+                    <input type="text" className="answer4" value={this.state.ans4} onChange={this.onChangeAnswer4} placeholder="    Wrong Answer:"/>
                     <form onSubmit={this.onSubmit}>
                         <input type="submit" value="Save" className="save_textbox"/>
                     </form>       

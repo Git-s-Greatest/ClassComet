@@ -211,8 +211,8 @@ p{
 
 .question-box{
   margin-top: 100px;
-  height: 70vh;
-  width: 85vw;
+  height: 1000px;
+  width: 500px;
     /*display: flex;*/
   align-items: center;
   justify-content: center;
@@ -220,14 +220,14 @@ p{
 }
 
 .question{
-  width: 1000px;
+  width: 800px;
   height: 80px;
   padding: 20px;
   font-size: 30px;
-  margin-top: 30px;
-  margin-left: -330px;;
+  margin-top: 10px;
+  margin-left: 130px;;
   border-radius: 5%;
-  background-color: #003087;
+  background-color:  lightblue;
   color: white;
 }
 
@@ -236,11 +236,11 @@ p{
   height: 100px;
   padding: 5px;
   float: left;
-  margin-top: 170px;
-  margin-left:260px;
+  margin-top: 50px;
+  margin-left:360px;
   font-size: 20px;
   margin-bottom: 10px;
-  background-color: #1E90FF;
+  background-color: lawngreen;
   color: white;
 }
 
@@ -249,11 +249,11 @@ p{
   height: 100px;
   padding: 5px;
   float: left;
-  margin-top: 60px;
-  margin-left: 170px;
+  margin-top: 20px;
+  margin-left: 360px;
   font-size: 20px;
   margin-bottom: 10px;
-  background-color: #FFB612;
+  background-color: red;
   color: white;
 }
 
@@ -262,11 +262,11 @@ p{
   height: 100px;
   padding: 5px;
   float: left;
-  margin-top: 300px;
-  margin-left: -770px;
+  margin-top: 20px;
+  margin-left: 360px;
   font-size: 20px;
   margin-bottom: 10px;
-  background-color:#1D4231;
+  background-color:red;
   color: white;
 }
 
@@ -275,19 +275,19 @@ p{
   height: 100px;
   padding: 5px;
   float: left;
-  margin-top: 300px;
-  margin-left: -300px;
+  margin-top: 20px;
+  margin-left: 360px;
   font-size: 20px;
   margin-bottom: 10px;
-  background-color: #C60C30;
+  background-color: red;
   color: white;
 }
 
-.save_textBox{
+.save_textbox{
   width: 90px;
   height: 40px;
-  margin-top: 450px;
-  margin-left: -430px;
+  margin-top: 20px;
+  margin-left: 460px;
   background-color: #6CA468;
 }
 
