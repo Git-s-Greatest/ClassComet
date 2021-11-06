@@ -1,6 +1,6 @@
 
 import axios from 'axios';
-import { Link, useHistory } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import "./login.css";
 import comet from "./components/comet_logo.png";
 import React, { Component } from "react";
@@ -15,6 +15,7 @@ export default class QuizPage extends Component{
         this.onChangeAnswer3 = this.onChangeAnswer3.bind(this);
         this.onChangeAnswer4 = this.onChangeAnswer4.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
+
     
         this.state = {
             question: '',
@@ -24,7 +25,6 @@ export default class QuizPage extends Component{
             ans4: ''
         }
     }
-    
 
     onChangeQuestion(e){
         this.setState({
@@ -59,20 +59,21 @@ export default class QuizPage extends Component{
     onSubmit(e) {
         e.preventDefault();
         const pageInfo = {
+            id: this.props.location.state['id'],
             question: this.state.question,
             ans1: this.state.ans1,
             ans2: this.state.ans2,
             ans3: this.state.ans3,
             ans4: this.state.ans4
         }
-
+        
         console.log(pageInfo);
 
         axios.post("http://localhost:5000/record/add", pageInfo)
         .then(res => console.log(res.data))
         .catch(err => console.log('errorrororo - ' + err.data))
 
-        //window.location = '/quizpage'
+        window.location = '/quizpage'
     }
 
     render(){
