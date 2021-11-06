@@ -19,7 +19,7 @@ recordRoutes.route("/record").get(function (req, res) {
       res.json(result);
     });
 });
-
+/*
 // This section will help you get a single record by id
 recordRoutes.route("/record/:id").get(function (req, res) {
   let db_connect = dbo.getDb("employees");
@@ -31,16 +31,20 @@ recordRoutes.route("/record/:id").get(function (req, res) {
         res.json(result);
       });
 });
+*/
 
 // This section will help you create a new record.
 recordRoutes.route("/record/add").post(function (req, res) {
   let db_connect = dbo.getDb("employees");
   let myobj = {
-    person_name: req.body.person_name,
-    person_position: req.body.person_position,
-    person_level: req.body.person_level,
+    id: req.body.id,
+    question: req.body.question,
+    answer1: req.body.ans1,
+    answer2: req.body.ans2,
+    answer3: req.body.ans3,
+    answer4: req.body.ans4
   };
-  db_connect.collection("records").insertOne(myobj, function (err, res) {
+  db_connect.collection("quizzes").insertOne(myobj, function (err, res) {
     if (err) throw err;
   });
 });
