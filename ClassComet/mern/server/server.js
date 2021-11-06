@@ -17,4 +17,8 @@ app.listen(port, () => {
  
   });
   console.log(`Server is running on port: ${port}`);
+
+  app.post('/', function (req, res) {
+    res.send('POST request to the homepage');
+  });
 });
