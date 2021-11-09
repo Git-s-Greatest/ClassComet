@@ -1,6 +1,6 @@
 
 import axios from 'axios';
-import { Link, useHistory, useLocation } from "react-router-dom";
+import { Link, Redirect, useHistory, useLocation } from "react-router-dom";
 import "./login.css";
 import comet from "./components/comet_logo.png";
 import React, { Component } from "react";
@@ -56,6 +56,10 @@ export default class QuizPage extends Component{
         });
     }
 
+    finishEdit = () =>{
+        this.props.history.push(`/quizEdits`);
+    }
+
     onSubmit(e) {
         e.preventDefault();
         const pageInfo = {
@@ -88,7 +92,6 @@ export default class QuizPage extends Component{
         <div class="container">
                 
             <div ><img src={comet} alt="Class Comet" class="logo-corner"/></div>
-            
             <div class="question-box">
                     <input type="text" className="question" value={this.state.question} onChange={this.onChangeQuestion} placeholder="Enter a Question:"/>
                     <input type="text" className="answer1" value={this.state.ans1} onChange={this.onChangeAnswer1} placeholder="    Right Answer"/>
@@ -97,8 +100,10 @@ export default class QuizPage extends Component{
                     <input type="text" className="answer4" value={this.state.ans4} onChange={this.onChangeAnswer4} placeholder="    Wrong Answer:"/>
                     <form onSubmit={this.onSubmit}>
                         <input type="submit" value="Save" className="save_textbox"/>
-                    </form>       
+                        <button type="button" className="finish_button" onClick={this.finishEdit}>Finish</button>
+                    </form>         
             </div>
+
 
         
         </div>
