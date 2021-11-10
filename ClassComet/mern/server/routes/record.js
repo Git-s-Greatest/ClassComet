@@ -42,7 +42,9 @@ recordRoutes.route("/record/add").post(function (req, res) {
     answer1: req.body.ans1,
     answer2: req.body.ans2,
     answer3: req.body.ans3,
-    answer4: req.body.ans4
+    answer4: req.body.ans4,
+    points: req.body.points,
+    time: req.body.time
   };
   db_connect.collection("quizzes").insertOne(myobj, function (err, res) {
     if (err) throw err;
