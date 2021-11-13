@@ -75,7 +75,7 @@ export default class QuizPage extends Component{
 
 
     finishEdit = () =>{
-        this.props.history.push(`/quizCode`);
+        this.props.history.push('/quizCode');
     }
 
     onSubmit(e) {
