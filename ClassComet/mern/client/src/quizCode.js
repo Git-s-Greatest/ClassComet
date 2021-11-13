@@ -1,13 +1,9 @@
-import { Link, useHistory } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import "./login.css";
 import React, {Component} from "react";
 import comet from "./components/comet_logo.png";
 
 export default class QuizCode extends Component{
-
-getRand(max){
-    return Math.floor(Math.random() * max);
-}
 
 render() {
     return (
@@ -22,7 +18,7 @@ render() {
     
 <div ><img src={comet} alt="Class Comet" class="logo-corner"/></div>
 <div class="quiz_code_text">Quiz Code:</div>
-<div class="quiz_code_number">{this.getRand(1000000)}</div>
+<div class="quiz_code_number">{this.props.location.state.detail}</div>
 <form>
     <button type="button" className="start_quiz_button">Start Quiz</button>
 </form>     

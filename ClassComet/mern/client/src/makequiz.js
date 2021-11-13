@@ -10,7 +10,7 @@ function Quiz() {
 
 <nav class="navbar navbar-default" styles="background-color: #BBBBBB; height: 75px">
     <form class="form-inline">
-        <div class="welcome-text">
+        <div className="welcome-text">
         Welcome, { getID() }
         </div>
     </form>

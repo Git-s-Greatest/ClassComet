@@ -9,6 +9,7 @@ import Quiz from './makequiz.js';
 import JoinaQuiz from "./joinaquiz.js";
 import QuizPage from "./quizpage.js";
 import TakeQuiz from "./takequiz.js";
+import QuizCode from "./quizCode.js";
 //import { Route } from "react-router-dom";
 
 // We import all the components we need in our app
@@ -31,6 +32,7 @@ const App = () => {
       <Route exact path="/joinaquiz" component={JoinaQuiz} />
       <Route exact path="/quizpage" component={QuizPage} />
       <Route exact path="/takequiz" component={TakeQuiz} />
+      <Route exact path="/quizCode" component={QuizCode} />
     </Switch>
   </Router>
 </div>

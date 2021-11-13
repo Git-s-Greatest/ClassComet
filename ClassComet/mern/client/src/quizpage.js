@@ -75,7 +75,10 @@ export default class QuizPage extends Component{
 
 
     finishEdit = () =>{
-        this.props.history.push('/quizCode');
+        this.props.history.push({
+            pathname: '/quizCode',
+            state: { detail: this.props.location.state['id']}
+        });
     }
 
     onSubmit(e) {
