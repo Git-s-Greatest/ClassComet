@@ -9,24 +9,25 @@ const recordRoutes = express.Router();
 const dbo = require("../db/conn");
 
 // This section will help you get a list of all the records.
-recordRoutes.route("/record").get(function (req, res) {
+recordRoutes.route("/get-quiz/:id").get(function (req, res) {
   let db_connect = dbo.getDb("employees");
+  var quizID = parseInt(req.params.id);
   db_connect
-    .collection("records")
-    .find({})
+    .collection("quizzes")
+    .find({"id": quizID})
     .toArray(function (err, result) {
       if (err) throw err;
-      res.json(result);
+      console.log(result);
     });
 });
-/*
+
 // This section will help you get a single record by id
-recordRoutes.route("/record/:id").get(function (req, res) {
+/*recordRoutes.route("/get-quiz/:id").get(function (req, res) {
   let db_connect = dbo.getDb("employees");
-  let myquery = { id: req.body.id };
+  let myquery = { question:  "h"};
   db_connect
-      .collection("records")
-      .findOne(myquery, function (err, result) {
+      .collection("quizzes")
+      .find(myquery, function (err, result) {
         if (err) throw err;
         res.json(result);
       });

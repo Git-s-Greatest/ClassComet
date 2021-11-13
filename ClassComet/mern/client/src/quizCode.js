@@ -5,6 +5,14 @@ import comet from "./components/comet_logo.png";
 
 export default class QuizCode extends Component{
 
+
+startQuiz = () =>{
+    this.props.history.push({
+        pathname: '/startquiz',
+        state: { detail: this.props.location.state.detail}
+    });
+}
+
 render() {
     return (
         <>
@@ -20,8 +28,12 @@ render() {
 <div class="quiz_code_text">Quiz Code:</div>
 <div class="quiz_code_number">{this.props.location.state.detail}</div>
 <form>
+<<<<<<< HEAD
     <button type="button" onClick={() => {navigator.clipboard.writeText(this.props.location.state.detail)}} className="copy_quiz_button">Copy Quiz Code</button>
     <button type="button" className="start_quiz_button">Start Quiz</button>
+=======
+    <button type="button" className="start_quiz_button" onClick={this.startQuiz}>Start Quiz</button>
+>>>>>>> 1be0929 (create start quiz page and receive quizzes that match unique ID from database)
 </form>     
 
     
