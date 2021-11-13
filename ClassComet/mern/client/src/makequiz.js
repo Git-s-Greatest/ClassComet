@@ -20,10 +20,10 @@ function Quiz() {
     <img src={comet} width="650" height="650" alt="Class Comet" class="move-image" />
     <p class = "welcome-message">Make learning fun with interactive quizzes throughout lecutres!</p>
 
-    <button class="learn-more-button" type="button"><Link to={{ pathname: '/quizpage', state: { id: Math.round(Date.now() / 1000)} }}>Make a Quiz</Link></button>
+    <button class="learn-more-button" type="button"><Link to={{ pathname: '/quizpage', state: { id: Math.round(Date.now() / 1000)} } }style={{ textDecoration: 'none', color: 'white' }}>Make a Quiz</Link></button>
 
 
-    <button class="join-quiz-button" type="button"><Link to="/joinaquiz">Join a Quiz</Link></button>
+    <button class="join-quiz-button" type="button"><Link to="/joinaquiz" style={{ textDecoration: 'none', color: 'white' }}>Join a Quiz</Link></button>
 
 </div>
 

@@ -9,8 +9,8 @@ function LearnMore() {
 
 <nav class="navbar navbar-default" styles="background-color: #BBBBBB; height: 75px">
     <form class="form-inline">
-        <button class="signup-button" type="button"><Link to="/register">Sign Up</Link></button>
-        <button class="login-button" type="button"><Link to="/login">Login</Link></button>
+    <button class="signup-button" type="button"><Link to="/register" style={{ textDecoration: 'none', color: 'white' }}>Sign Up</Link></button>
+        <button class="login-button" type="button"><Link to="/login" style={{ textDecoration: 'none', color: 'white' }}>Login</Link></button>
     </form>
 </nav>
 <div><img src={cometname}  alt="Class Comet" /></div>
@@ -21,7 +21,7 @@ function LearnMore() {
     </p>
     
     <p class = "learnmore_style">
-    This serves as an interactive quiz for fun or to allow the teacher to gauge how students are learning throughout the class.
+    ClassComet serves as an interactive quiz for fun or to allow the teacher to gauge how students are learning throughout the class.
     </p>
 
 

@@ -8,8 +8,8 @@ function Landing() {
 
 <nav class="navbar navbar-default" styles="background-color: #BBBBBB; height: 75px">
     <form class="form-inline">
-        <button class="signup-button" type="button"><Link to="/register">Sign Up</Link></button>
-        <button class="login-button" type="button"><Link to="/login">Login</Link></button>
+        <button class="signup-button" type="button"><Link to="/register" style={{ textDecoration: 'none', color: 'white' }}>Sign Up</Link></button>
+        <button class="login-button" type="button"><Link to="/login" style={{ textDecoration: 'none', color: 'white' }}>Login</Link></button>
     </form>
 </nav>
 
@@ -17,7 +17,7 @@ function Landing() {
     
     <img src={comet} width="650" height="650" alt="Class Comet" class="move-image" />
     <p class = "welcome-message">Make learning fun with interactive quizzes throughout lecutres!</p>
-    <button class="learn-more-button" type="button"><Link to="/learnmore">Learn more</Link></button>
+    <button class="learn-more-button" type="button"><Link to="/learnmore" style={{ textDecoration: 'none', color: 'white' }}>Learn more</Link></button>
 
     
 </div>
