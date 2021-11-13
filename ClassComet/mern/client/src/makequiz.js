@@ -17,8 +17,8 @@ function Quiz() {
 </nav>
 
 <div class="container">
-    <img src={comet} width="650" height="650" alt="Class Comet" class="move-image" />
-    <p class = "welcome-message">Make learning fun with interactive quizzes throughout lecutres!</p>
+    <img src={comet} width="800" height="800" alt="Class Comet" class="move-image" />
+    <p class = "welcome-message">Make learning fun with interactive quizzes throughout lectures!</p>
 
     <button class="learn-more-button" type="button"><Link to={{ pathname: '/quizpage', state: { id: Math.round(Date.now() / 1000)} } }style={{ textDecoration: 'none', color: 'white' }}>Make a Quiz</Link></button>
 

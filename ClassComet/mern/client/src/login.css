@@ -154,15 +154,16 @@ p{
     position:fixed;
     left:0px;
     bottom:0px;
-    height:70px;
+    height:65px;
     width:100%;
     background-color:#3C3760;
+    color: white;
   
   }
 
   .move-image{
     position: relative;
-    left:-200px;
+    left: 225px;
     }
     .welcome-message{
       color: black;
@@ -170,7 +171,7 @@ p{
       font-family: 'Montserrat';
       position: relative;
       top: -150px;
-      left: -85px;
+      left: 310px;
     }
     
 .join-quiz-image{
@@ -414,36 +415,51 @@ p{
 
 .quiz_code_text{
   font-size: 60px;
-  margin-left: 420px;
-  margin-top: 80px;
+  margin-left: 500px;
+  margin-top: 65px;
+  font-weight: bold;
 }
 
 .quiz_code_number{
   font-size: 70px;
-  color: blue;
+  font-weight: bold;
+  color: white;
   text-align: center;
-  background-color: lightblue;
+  background-color: #3C3760;
   margin-left: 280px;
   margin-right: 280px;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .start_quiz_button{
-  margin-left: 450px;
-  margin-top: 100px;
+  margin-left: 490px;
+  margin-top: 50px;
   height: 100px;
-  width: 250px;
+  width: 320px;
   font-size: 40px;
-  background-color: lightgreen;
+  font-weight: bold;
+  background-color: #3C3760;
+  color: white;
 }
+.copy_quiz_button{
+  margin-left: 535px;
+  margin-top: 50px;
+  height: 70px;
+  width: 230px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #4AD3AE;
+  color: #3C3760;
+}
+
 
 
 .learnmore_style{
   color: #3C3760;
-  font-size: 30px;
-  font-family: 'Copperplate';
+  font-size: 28px;
+  font-family: Copperplate;
   position: relative;
-  margin-left: -350px;
+  margin-left: -320px;
   margin-top: -100px;
   font-weight: bold;
  

@@ -15,7 +15,7 @@ function Landing() {
 
 <div class="container">
     
-    <img src={comet} width="650" height="650" alt="Class Comet" class="move-image" />
+    <img src={comet} width="800" height="800" alt="Class Comet" class="move-image" />
     <p class = "welcome-message">Make learning fun with interactive quizzes throughout lecutres!</p>
     <button class="learn-more-button" type="button"><Link to="/learnmore" style={{ textDecoration: 'none', color: 'white' }}>Learn more</Link></button>
 

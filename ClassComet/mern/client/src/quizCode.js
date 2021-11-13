@@ -20,6 +20,7 @@ render() {
 <div class="quiz_code_text">Quiz Code:</div>
 <div class="quiz_code_number">{this.props.location.state.detail}</div>
 <form>
+    <button type="button" onClick={() => {navigator.clipboard.writeText(this.props.location.state.detail)}} className="copy_quiz_button">Copy Quiz Code</button>
     <button type="button" className="start_quiz_button">Start Quiz</button>
 </form>     
 
