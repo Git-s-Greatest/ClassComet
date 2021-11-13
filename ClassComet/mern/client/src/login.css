@@ -160,7 +160,7 @@ p{
     }
     .welcome-message{
       color: black;
-      font-size: 22px;
+      font-size: 25px;
       font-family: 'Montserrat';
       position: relative;
       top: -150px;
@@ -429,4 +429,38 @@ p{
   width: 250px;
   font-size: 40px;
   background-color: lightgreen;
+}
+
+
+.learnmore_style{
+  color: #3C3760;
+  font-size: 30px;
+  font-family: 'Copperplate';
+  position: relative;
+  margin-left: -350px;
+  margin-top: -100px;
+  font-weight: bold;
+ 
+}
+
+.learnmore-box{
+  background:#3C3760;
+  border: solid 1pt black;
+  margin:30 px 10px;
+  padding:70px;
+   
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:50px;  
+  margin-left:-240px;
+}
+
+.learnmore__textBox {
+  width: 300px;
+  padding: 5px;
+  font-size: 20px;
+  margin-bottom: 5px;
+  border-radius: 5%;
+  background-color: #4AD3AE;
 }

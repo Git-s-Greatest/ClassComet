@@ -1,6 +1,7 @@
 import { Link, useHistory } from "react-router-dom";
 import "./login.css";
 import comet from "./components/class_comet.png";
+import cometname from "./components/class_comet_name_logo.png";
 function LearnMore() {
     return (
         <>
@@ -12,11 +13,25 @@ function LearnMore() {
         <button class="login-button" type="button"><Link to="/login">Login</Link></button>
     </form>
 </nav>
-
-<div class="container">
+<div><img src={cometname}  alt="Class Comet" /></div>
+<div class="container" >
+    <p class = "learnmore_style">
+      ClassComet is a website that allows people, usually teachers, 
+      to make quizzes and play them in class. 
+    </p>
     
-  
-    <p>Thorough Description of Site</p>
+    <p class = "learnmore_style">
+    This serves as an interactive quiz for fun or to allow the teacher to gauge how students are learning throughout the class.
+    </p>
+
+
+    <div class = "learnmore-box">
+    <button  className="learnmore__textBox" type="button"><Link to="/register" style={{ textDecoration: 'none', color: '#3C3760' }}> Register Now</Link></button>
+    <br></br>
+    
+    <button  className="learnmore__textBox" type="button"><Link to="/login" style={{ textDecoration: 'none', color: '#3C3760' }} >Login</Link></button>
+    </div>
+
 
     
 </div>
