@@ -452,6 +452,13 @@ p{
   color: #3C3760;
 }
 
+.copy_button{
+  background-color: #3C3760;
+  color: white;
+  position: absolute;
+  right: 0px;
+  font-weight: bold;
+}
 
 
 .learnmore_style{
@@ -485,4 +492,67 @@ p{
   margin-bottom: 5px;
   border-radius: 5%;
   background-color: #4AD3AE;
+}
+
+.question_view{
+  background-color: #003087;
+  color: white;
+  position: absolute;
+  width: 900px;
+  height: 120px;
+  top: 150px;
+  left: 530px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.first_view{
+  color: white;
+  background-color: #1E90FF;
+  width: 350px;
+  height: 125px;
+  position: absolute;
+  top: 325px;
+  left:570px;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+.second_view{
+  color: white;
+  background-color: #FFB612;
+  width: 350px;
+  height: 125px;
+  position: absolute;
+  top: 325px;
+  left:1050px;
+  font-weight: bold;
+  font-size: 20px;
+ 
+}
+
+.third_view{
+  color: white;
+  background-color: #1D4231;
+  width: 350px;
+  height: 125px;
+  position: absolute;
+  top: 500px;
+  left:570px;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+.fourth_view{
+  color: white;
+  background-color: #C60C30;
+  width: 350px;
+  height: 125px;
+  position: absolute;
+  top: 500px;
+  left:1050px;
+  font-weight: bold;
+  font-size: 20px;
+
 }
