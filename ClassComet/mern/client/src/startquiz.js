@@ -14,28 +14,48 @@ export default class StartQuiz extends Component{
             rightAns: "",
             wrongAns1: "",
             wrongAns2: "",
-            wrongAns3: ""
+            wrongAns3: "",
+            countdown: 10,
+            time: 15,
         }
+
+        this.timer = setInterval(() => this.tick(), props.timeout || 1000);
     }
 
+    tick() {
+        const current = this.state.countdown;
+        if (current === 0) {
+          this.transition();
+        } else {
+          this.setState({ countdown: current - 1 }); 
+        } 
+      }
+    
+    transition() {
+        clearInterval(this.timer);
+        // do something else here, presumably.
+    }
 
-loadQuestion(){
-    let url = "http://localhost:5000/get-quiz/" + this.props.location.state.detail;
-    axios.get(url)
-    .then(response => {
-      this.response = response.data[0];
-      console.log(this.response['question']);
-      this.setState({question: this.response['question']});
-      this.setState({rightAns: this.response['answer1']});
-      this.setState({wrongAns1: this.response['answer2']});
-      this.setState({wrongAns2: this.response['answer3']});
-      this.setState({wrongAns3: this.response['answer4']});
-    });
-}
+    loadQuestion(){
+        let url = "http://localhost:5000/get-quiz/" + this.props.location.state.detail;
+        axios.get(url)
+        .then(response => {
+        this.response = response.data[0];
+        console.log(this.response['question']);
+        this.setState({question: this.response['question']});
+        this.setState({rightAns: this.response['answer1']});
+        this.setState({wrongAns1: this.response['answer2']});
+        this.setState({wrongAns2: this.response['answer3']});
+        this.setState({wrongAns3: this.response['answer4']});
+        this.setState({points: this.response['points']});
+        this.setState({countdown: this.response['time']});
+        });
+    }
 
 
 
 render() {
+
     return (
         <>
       <body>
@@ -47,6 +67,8 @@ render() {
 <div class="container">
     
 <div ><img src={comet} alt="Class Comet" class="logo-corner"/></div>
+
+<div class="timer">Time: {this.state.countdown}</div>
 
 <button class = "question_view" type="button" >{this.state.question}</button>
 <button class = "first_view" type="button" >{this.state.rightAns}</button>
