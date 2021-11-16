@@ -227,12 +227,13 @@ p{
 
 .question{
   width: 800px;
-  height: 80px;
+  height: 100px;
   padding: 20px;
   font-size: 30px;
-  margin-top: 10px;
-  margin-left: 230px;
-  border-radius: 5%;
+  position:absolute;
+  top: 80px;
+  left: 550px;
+  font-weight: bold;
   background-color:  lightblue;
   color: white;
 }
@@ -241,68 +242,74 @@ p{
   width: 300px;
   height: 100px;
   padding: 5px;
-  float: left;
-  margin-top: 50px;
-  margin-left:300px;
+  position: absolute;
+  top: 200px;
+  left: 500px;
+  font-weight: bold;
   font-size: 20px;
-  margin-bottom: 10px;
   background-color: lawngreen;
   color: white;
+  font-weight: bold;
 }
 
 .answer2{
   width: 300px;
   height: 100px;
   padding: 5px;
-  float: left;
-  margin-top: 20px;
-  margin-left: 300px;
+  position: absolute;
+  top: 350px;
+  left: 500px;
   font-size: 20px;
-  margin-bottom: 10px;
   background-color: red;
   color: white;
+  font-weight: bold;
 }
 
 .answer3{
   width: 300px;
   height: 100px;
   padding: 5px;
-  float: left;
-  margin-top: 20px;
-  margin-left: 300px;
+  position: absolute;
+  top: 500px;
+  left: 500px;
   font-size: 20px;
-  margin-bottom: 10px;
   background-color:red;
   color: white;
+  font-weight: bold;
 }
 
 .answer4{
   width: 300px;
   height: 100px;
   padding: 5px;
-  float: left;
-  margin-top: 20px;
-  margin-left: 300px;
+  position: absolute;
+  top: 650px;
+  left: 500px;
   font-size: 20px;
-  margin-bottom: 10px;
   background-color: red;
   color: white;
+  font-weight: bold;
 }
 
 .save_textbox{
   width: 90px;
   height: 40px;
-  margin-top: 20px;
-  margin-left: 660px;
-  background-color: #99edc3;
+  position: absolute;
+  top: 650px;
+  left: 1165px;
+  background-color: #4AD3AE;
+  border-radius: 8%;
 }
 
 .finish_button{
   width: 90px;
   height: 40px;
-  margin-top: 20px;
-  margin-left: 660px;
-  background-color: #e4e7eb;
+  position: absolute;
+  top: 700px;
+  left: 1165px;
+  background-color: #3C3760;
+  border-radius: 8%;
+  color: white;
 }
 
 .join-quiz-button{
@@ -379,8 +386,9 @@ p{
 
 
 .time_per_question{
-  float: left;
-  margin-left: 90px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
   height: 80px;
   width: 100px;
   font-size: 30px;
@@ -389,16 +397,18 @@ p{
 
 
 .seconds_text{
-  margin-left: 720px;
-  margin-top: 50px;
+  position: absolute;
+  top: 250px;
+  left: 1060px;
   width: 340px;
   font-size: 30px;
   font-weight: bold;
 }
 
 .points_per_question{
-  float: left;
-  margin-left: 90px;
+  position: absolute;
+  top: 60px;
+  left: 100px;
   height: 80px;
   width: 100px;
   font-size: 30px;
@@ -406,8 +416,9 @@ p{
 }
 
 .points_text{
-  margin-left: 720px;
-  margin-top: 200px;
+  position: absolute;
+  top: 425px;
+  left: 1060px;
   width: 340px;
   font-size: 30px;
   font-weight: bold;
