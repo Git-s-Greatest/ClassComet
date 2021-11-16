@@ -567,3 +567,12 @@ p{
   font-size: 20px;
 
 }
+
+.load_question_button{
+  margin-top: 670px;
+  margin-left: 660px;
+  width: 100px;
+  height: 60px;
+  font-size: 30px;
+  background-color: #4AD3AE;
+}

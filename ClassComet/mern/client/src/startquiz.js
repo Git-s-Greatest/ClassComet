@@ -9,16 +9,28 @@ export default class StartQuiz extends Component{
     constructor(props){
         super(props);
         this.loadQuestion = this.loadQuestion.bind(this)
+        this.state = {
+            question: "",
+            rightAns: "",
+            wrongAns1: "",
+            wrongAns2: "",
+            wrongAns3: ""
+        }
     }
 
 
 loadQuestion(){
     let url = "http://localhost:5000/get-quiz/" + this.props.location.state.detail;
-    console.log(url);
-    axios.get(url);
-    //.then((response) => {
-      //console.log(response.data)
-    //});
+    axios.get(url)
+    .then(response => {
+      this.response = response.data[0];
+      console.log(this.response['question']);
+      this.setState({question: this.response['question']});
+      this.setState({rightAns: this.response['answer1']});
+      this.setState({wrongAns1: this.response['answer2']});
+      this.setState({wrongAns2: this.response['answer3']});
+      this.setState({wrongAns3: this.response['answer4']});
+    });
 }
 
 
@@ -36,15 +48,13 @@ render() {
     
 <div ><img src={comet} alt="Class Comet" class="logo-corner"/></div>
 
-<button type="button" value={this.props.location.state.detail} onClick={this.loadQuestion}>load</button>
+<button class = "question_view" type="button" >{this.state.question}</button>
+<button class = "first_view" type="button" >{this.state.rightAns}</button>
+<button class = "second_view" type="button" >{this.state.wrongAns1}</button>
+<button class = "third_view" type="button" >{this.state.wrongAns2}</button>
+<button class = "fourth_view" type="button" >{this.state.wrongAns3}</button>
+<button type="button" class='load_question_button' value={this.props.location.state.detail} onClick={this.loadQuestion}>load</button>
 <button type="button"  class = "copy_button" onClick={() => {navigator.clipboard.writeText(this.props.location.state.detail)}}>Quiz Code: {this.props.location.state.detail}</button> 
-
-<button class = "question_view" type="button" >Question</button>
-<button class = "first_view" type="button" >1st</button>
-<button class = "second_view" type="button" >2nd</button>
-<button class = "third_view" type="button" >3rd</button>
-<button class = "fourth_view" type="button" >4th</button>
-
 
     
 </div>

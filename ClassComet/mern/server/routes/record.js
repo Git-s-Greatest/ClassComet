@@ -17,7 +17,7 @@ recordRoutes.route("/get-quiz/:id").get(function (req, res) {
     .find({"id": quizID})
     .toArray(function (err, result) {
       if (err) throw err;
-      console.log(result);
+      res.send(result);
     });
 });
 
