@@ -467,6 +467,7 @@ p{
   background-color: #3C3760;
   color: white;
   position: absolute;
+  top: 75px;
   right: 0px;
   font-weight: bold;
 }
@@ -569,8 +570,9 @@ p{
 }
 
 .load_question_button{
-  margin-top: 470px;
-  margin-left: 690px;
+  position: absolute;
+  top: 670px;
+  left: 935px;
   width: 100px;
   height: 60px;
   font-size: 30px;
@@ -578,6 +580,6 @@ p{
 }
 
 .timer{
-  margin-top: 100px;
+  margin-top: 60px;
   font-size: 30px;
 }
