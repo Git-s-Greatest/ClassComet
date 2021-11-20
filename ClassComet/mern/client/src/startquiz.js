@@ -52,6 +52,11 @@ export default class StartQuiz extends Component{
         });
     }
 
+    //called when the load button is pressed
+    handleLoadClick = () => {
+      this.loadQuestion();  //loads a question
+      this.tick();  //starts the countdown
+    }
 
 
 render() {
@@ -75,7 +80,7 @@ render() {
 <button class = "second_view" type="button" >{this.state.wrongAns1}</button>
 <button class = "third_view" type="button" >{this.state.wrongAns2}</button>
 <button class = "fourth_view" type="button" >{this.state.wrongAns3}</button>
-<button type="button" class='load_question_button' value={this.props.location.state.detail} onClick={this.loadQuestion}>load</button>
+<button type="button" class='load_question_button' value={this.props.location.state.detail} onClick={this.handleLoadClick}>load</button>
 <button type="button"  class = "copy_button" onClick={() => {navigator.clipboard.writeText(this.props.location.state.detail)}}>Quiz Code: {this.props.location.state.detail}</button> 
 
     
