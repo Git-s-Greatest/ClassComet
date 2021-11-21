@@ -491,10 +491,9 @@ p{
   padding:70px;
    
   position:absolute;
-  top:50%;
-  left:50%;
-  margin-top:50px;  
-  margin-left:-240px;
+  top:500px;
+  left:750px;
+
 }
 
 .learnmore__textBox {

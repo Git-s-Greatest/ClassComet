@@ -15,7 +15,7 @@ export default class StartQuiz extends Component{
             wrongAns1: "",
             wrongAns2: "",
             wrongAns3: "",
-            countdown: 0,
+            countdown: 10,
             time: 15,
         }
 
@@ -53,10 +53,10 @@ export default class StartQuiz extends Component{
     }
 
  //called when the load button is pressed
-    handleLoadClick = () => {
-      this.loadQuestion();  //loads a question
-      this.tick();  //starts the countdown
-    }
+ handleLoadClick = () => {
+  this.loadQuestion();  //loads a question
+  this.tick();  //starts the countdown
+}
 
 render() {
 
