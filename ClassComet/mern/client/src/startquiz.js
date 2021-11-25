@@ -17,6 +17,7 @@ export default class StartQuiz extends Component{
             wrongAns3: "",
             countdown: 10,
             time: 15,
+            points: 10
         }
 
         this.timer = setInterval(() => this.tick(), props.timeout || 1000);
@@ -82,7 +83,7 @@ render() {
 <button type="button" class='load_question_button' value={this.props.location.state.detail} onClick={this.loadQuestion}>load</button>
 <button type="button"  class = "copy_button" onClick={() => {navigator.clipboard.writeText(this.props.location.state.detail)}}>Quiz Code: {this.props.location.state.detail}</button> 
 
-
+<div class="points">Points: {this.state.points}</div>
 </div>
 
 
