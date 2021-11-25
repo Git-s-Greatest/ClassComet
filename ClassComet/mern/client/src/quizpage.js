@@ -117,14 +117,14 @@ export default class QuizPage extends Component{
             <div ><img src={comet} alt="Class Comet" class="logo-corner"/></div>
             <div >
                     <input type="text" className="question" value={this.state.question} onChange={this.onChangeQuestion} placeholder="Enter a Question:"/>
-                    <input type="text" className="answer1" value={this.state.ans1} onChange={this.onChangeAnswer1} placeholder="    Right Answer:"/>
-                    <input type="text" className="answer2" value={this.state.ans2} onChange={this.onChangeAnswer2} placeholder="    Wrong Answer:"/>
+                    <input type="text" className="answer1" value={this.state.ans1} onChange={this.onChangeAnswer1} placeholder="    Enter an Answer:"/>
+                    <input type="text" className="answer2" value={this.state.ans2} onChange={this.onChangeAnswer2} placeholder="    Enter an Answer:"/>
                     <div class="seconds_text">
                         Seconds per Question
                         <input className="time_per_question" type="text" value={this.state.time} onChange={this.onChangeTime}/>
                     </div> 
-                    <input type="text" className="answer3" value={this.state.ans3} onChange={this.onChangeAnswer3} placeholder="    Wrong Answer:"/>
-                    <input type="text" className="answer4" value={this.state.ans4} onChange={this.onChangeAnswer4} placeholder="    Wrong Answer:"/>
+                    <input type="text" className="answer3" value={this.state.ans3} onChange={this.onChangeAnswer3} placeholder="    Enter an Answer:"/>
+                    <input type="text" className="answer4" value={this.state.ans4} onChange={this.onChangeAnswer4} placeholder="    Enter an Answer:"/>
                     <div class="points_text">
                         Points per Question
                         <input className="points_per_question" type="text" value={this.state.points} onChange={this.onChangePoints}/>
@@ -132,7 +132,20 @@ export default class QuizPage extends Component{
                     <form onSubmit={this.onSubmit}>
                         <input type="submit" value="Save" className="save_textbox"/>
                         <button type="button" className="finish_button" onClick={this.finishEdit}>Finish</button>
-                    </form>     
+                    </form> 
+
+                <div className = "radio">
+                 Select Correct Answer:
+                 <br></br>
+                    <input className="block" type="radio" name = "correct"/> a
+                    <br></br>
+                    <input className="block" type="radio" name = "correct"/> b
+                    <br></br>
+                    <input className="block" type="radio" name = "correct"/> c
+                    <br></br>
+                    <input className="block" type="radio" name = "correct"/> d
+                </div>
+
             </div>
 
 
