@@ -618,8 +618,8 @@ p{
 
 .user-text{
   position: absolute;
-  top: 280px;
-  left: 90px;
+  top: 80px;
+  left: 260px;
   font-size: 30px;
   font-weight: bold;
   color: #3C3760;
@@ -630,4 +630,17 @@ p{
   position: absolute;
   top: 80px;
   left: 20px;
+}
+
+
+.user-box{
+  background:#3C3760;
+  border: solid 1pt black;
+  margin:10 px 10px;
+  padding:20px;
+   
+  position:absolute;
+  top:300px;
+  left:0px;
+
 }

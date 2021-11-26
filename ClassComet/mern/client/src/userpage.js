@@ -19,6 +19,26 @@ function UserPage() {
 <div className="user-text"> { getID() } </div>
 </div>
 
+<div class = "user-box">
+
+    <button  className="learnmore__textBox" type="button"> Profile Options</button>
+    <br></br>
+    
+    <button  className="learnmore__textBox" type="button"> My Scores</button>
+    <br></br>
+    <button  className="learnmore__textBox" type="button"> My Quizzes</button>
+    <br></br>
+    <button  className="learnmore__textBox" type="button"> My Slideshows</button>
+    <br></br>
+    
+    <button  className="learnmore__textBox" type="button"> Classrooms</button>
+    
+    
+
+
+
+</div>
+
 
 
 <div class="container">
