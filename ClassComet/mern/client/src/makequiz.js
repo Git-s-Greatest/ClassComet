@@ -25,6 +25,7 @@ function Quiz() {
 
     <button class="join-quiz-button" type="button"><Link to="/joinaquiz" style={{ textDecoration: 'none', color: 'white' }}>Join a Quiz</Link></button>
 
+    <button class="myprofile-button" type="button">< Link to="/userpage"style={{ textDecoration: 'none', color: 'white' }}>My Profile</Link></button>
 </div>
 
 
