@@ -24,6 +24,8 @@ function Quiz() {
 
 
     <button class="join-quiz-button" type="button"><Link to="/joinaquiz" style={{ textDecoration: 'none', color: 'white' }}>Join a Quiz</Link></button>
+        
+     <button class="flashcards-button" type="button"><Link to="/flashcards" style={{ textDecoration: 'none', color: 'white' }}>Flashcards</Link></button>
 
     <button class="myprofile-button" type="button">< Link to="/userpage"style={{ textDecoration: 'none', color: 'white' }}>My Profile</Link></button>
 </div>
