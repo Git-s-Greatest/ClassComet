@@ -1,0 +1,28 @@
+.Flashcards {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+
+  
+  .cards {
+    justify-content: center;
+  }
+  
+  .FlashcardViewer .cardContent {
+    padding: 40px 0;
+  }
+
+  .top-border{
+    margin-top: 5rem;
+  }
+
+  .flashcards-button{
+    position:absolute;
+      background-color: #3C3760;
+      top: 470px;
+      right: 220px;
+      height: 40px;
+      width: 140px;
+      border-radius: 8%;
+  }
