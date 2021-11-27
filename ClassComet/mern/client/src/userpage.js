@@ -28,7 +28,7 @@ function UserPage() {
     <br></br>
     <button  className="learnmore__textBox" type="button"> My Quizzes</button>
     <br></br>
-    <button  className="learnmore__textBox" type="button"> My Slideshows</button>
+    <button  className="learnmore__textBox" type="button"><Link to="/flashcards"style={{ textDecoration: 'none', color: 'black' }}> My Flashcards</Link></button>
     <br></br>
     
     <button  className="learnmore__textBox" type="button"> Classrooms</button>
@@ -48,7 +48,7 @@ function UserPage() {
 
 <button class="join-quiz-button" type="button"><Link to="/joinaquiz" style={{ textDecoration: 'none', color: 'white' }}>Join a Quiz</Link></button>
  
-
+<button class="flashcards-button" type="button"><Link to="/flashcards" style={{ textDecoration: 'none', color: 'white' }}>Flashcards</Link></button>
 
 
 </div>
