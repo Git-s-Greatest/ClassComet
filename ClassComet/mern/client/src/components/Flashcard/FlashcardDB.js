@@ -16,57 +16,57 @@ let DECKS = {
         last: [true]
       },
       {
-        front: 'Obviate',
-        back: 'To make unnecessary; to avoid',
+        front: 'quixotic',
+        back: 'not sensible about practical matters',
         last: [true, false]
       },
       {
-        front: 'Defer',
-        back: 'To put aside until later',
+        front: 'dogma',
+        back: 'a doctrine or code of beliefs accepted as authoritative',
         last: [true]
       }
     ],
     vocabulary2: [
       {
-        front: 'Deference',
-        back: "act or practice of yielding to another's authority",
+        front: 'belligerent',
+        back: "characteristic of an enemy or one eager to fight",
         last: [false, true]
       },
       {
-        front: 'Confer',
-        back: 'to discuss something with someone else; consult',
+        front: 'impetuous',
+        back: 'characterized by undue haste and lack of thought',
         last: [false, false, false]
       },
       {
-        front: 'Deviate',
-        back: 'to depart, especially from a path or plan',
+        front: 'pernicious',
+        back: 'exceedingly harmful',
         last: [true]
       },
       {
-        front: 'Obviate',
-        back: 'To make unnecessary; to avoid',
+        front: 'brazen',
+        back: 'unrestrained by convention or propriety',
         last: [true, false]
       },
       {
-        front: 'Defer',
-        back: 'To put aside until later',
+        front: 'doppelganger',
+        back: 'a ghostly double that haunts its living counterpart',
         last: [true]
       }
     ],
     sports: [
       {
-        front: '2 sports teams in LA',
-        back: 'Lakers, Clippers',
+        front: 'How many medals did China win at the Beijing Olympics?',
+        back: '100',
         last: [true, false]
       },
       {
-        front: 'What team does Lebron James play for?',
-        back: 'LA Lakers',
+        front: 'The Olympics are held every how many years?',
+        back: '4 years',
         last: [false, false, false]
       },
       {
-        front: 'How many times have the Lakers won?',
-        back: '13',
+        front: 'What’s the national sport of Canada?',
+        back: 'Lacrosse',
         last: [true]
       }
     ]
