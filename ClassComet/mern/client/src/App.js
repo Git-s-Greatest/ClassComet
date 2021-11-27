@@ -14,6 +14,12 @@ import StartQuiz from "./startquiz.js";
 import UserPage from "./userpage.js";
 //import { Route } from "react-router-dom";
 
+//needed for flashcards
+import 'semantic-ui-css/semantic.min.css'
+import { Container } from "semantic-ui-react";
+import CreateFlashcard from "./components/Flashcard/CreateFlashcard.js";
+import Flashcards from "./Flashcards.js";
+
 // We import all the components we need in our app
 import Navbar from "./components/navbar";
 import Edit from "./components/edit";
@@ -37,6 +43,7 @@ const App = () => {
       <Route exact path="/quizCode" component={QuizCode} />
       <Route exact path="/startquiz" component={StartQuiz} />
       <Route exact path="/userpage" component={UserPage} />
+      <Route exact path="/flashcards" component={Flashcards} />
     </Switch>
   </Router>
 </div>
