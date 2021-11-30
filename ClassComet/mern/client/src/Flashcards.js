@@ -8,6 +8,7 @@ import "./flashcards.css"
 
 
 export default class Flashcards extends Component {
+
   constructor() {
     super();
     this.state = {

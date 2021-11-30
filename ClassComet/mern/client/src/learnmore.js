@@ -1,4 +1,4 @@
-import { Link, useHistory } from "react-router-dom";
+import { Link, NavLink, useHistory } from "react-router-dom";
 import "./login.css";
 import comet from "./components/class_comet.png";
 import cometname from "./components/class_comet_name_logo.png";
@@ -13,7 +13,7 @@ function LearnMore() {
         <button class="login-button" type="button"><Link to="/login" style={{ textDecoration: 'none', color: 'white' }}>Login</Link></button>
     </form>
 </nav>
-<div><img src={cometname}  alt="Class Comet" /></div>
+<div><Link to=''><button class="landing-button" type="button"><img src={cometname} alt='Class Comet'/></button></Link></div>
 <div  >
     <p class = "learnmore_style">
       ClassComet is a website that allows people, usually teachers, 

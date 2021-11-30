@@ -58,6 +58,26 @@ p{
 
 }
 
+.back-button{
+  color: white;
+	position:absolute;
+	background-color: #3C3760;
+	top: 15px;
+	left:20px;
+	height: 40px;
+	width: 80px;
+	border-radius: 10%;
+	border-color: #3C3760;
+
+
+
+  }
+.landing-button{
+  position:absolute;
+  background-color:#ffffff;
+  border: none;  
+}
+
 .container{
     height: 85vh;
     width: 100vw;

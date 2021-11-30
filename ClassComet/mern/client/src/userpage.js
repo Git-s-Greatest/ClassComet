@@ -14,7 +14,7 @@ function UserPage() {
     </form>
 </nav>
 <img src={grayface} width="175" height="175" alt="Class Comet"  className = "gray-image"/>
-<img src={comet2} width="250" height="250" alt="Class Comet" className = "user-move-image" />
+<Link to=''><button class='landing-page' type='button'><img src={comet2} width="250" height="250" alt="Class Comet" className = "user-move-image"/></button></Link>
 <div>
 <div className="user-text"> { getID() } </div>
 </div>

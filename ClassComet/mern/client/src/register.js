@@ -19,7 +19,7 @@ function Register() {
     return (
         <>
       <div className="navbar"></div>
-      <div><img src={cometname}  alt="Class Comet" /></div>
+      <div><Link to=''><button class="landing-button" type="button"><img src={cometname} alt='Class Comet'/></button></Link></div>
       <div className="login">
         <div className="login__container">
         <div className="register-title">Sign Up</div>
