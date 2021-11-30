@@ -14,13 +14,13 @@ function LearnMore() {
     </form>
 </nav>
 <div><img src={cometname}  alt="Class Comet" /></div>
-<div class="container" >
+<div  >
     <p class = "learnmore_style">
       ClassComet is a website that allows people, usually teachers, 
       to make quizzes and play them in class. 
     </p>
     
-    <p class = "learnmore_style">
+    <p class = "learnmore2_style">
     ClassComet serves as an interactive quiz for fun or to allow the teacher to gauge how students are learning throughout the class.
     </p>
 

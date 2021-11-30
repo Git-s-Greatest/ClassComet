@@ -476,9 +476,19 @@ p{
   color: #3C3760;
   font-size: 28px;
   font-family: Copperplate;
-  position: relative;
-  margin-left: -320px;
-  margin-top: -100px;
+  position: absolute;
+  left: 300px;
+  top: 250px;
+  font-weight: bold;
+ 
+}
+.learnmore2_style{
+  color: #3C3760;
+  font-size: 28px;
+  font-family: Copperplate;
+  position: absolute;
+  left: 300px;
+  top: 300px;
   font-weight: bold;
  
 }
@@ -490,8 +500,8 @@ p{
   padding:70px;
    
   position:absolute;
-  top:500px;
-  left:750px;
+  top:450px;
+  left:720px;
 
 }
 
